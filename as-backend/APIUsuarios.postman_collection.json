@@ -1,0 +1,54 @@
+{
+  "info": {
+    "_postman_id": "b1a2c3d4-0000-0000-0000-000000000000",
+    "name": "APIUsuarios",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar Usu\u00e1rios",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/usuarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "usuarios"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar Usu\u00e1rio - v\u00e1lido",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"nome\": \"Maria\", \"email\": \"maria@example.com\", \"senha\": \"senha123\", \"dataNascimento\": \"1995-05-05T00:00:00\", \"telefone\": \"(11) 91234-0000\" }"
+        },
+        "url": {
+          "raw": "http://localhost:5000/usuarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "usuarios"
+          ]
+        }
+      }
+    }
+  ]
+}

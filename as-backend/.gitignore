@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+.vscode/
+APIUsuarios/apiusuarios.db
+**/*.user
+**/*.suo
+.DS_Store
